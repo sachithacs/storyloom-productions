@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
 <title>Storyloom Productions</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-background:#0b0b0b;
-color:white;
+font-family:Arial, sans-serif;
+background:black;
+color:#ffd000;
+text-align:center;
 }
 
 /* Navigation */
 
 nav{
-position:fixed;
-width:100%;
 background:black;
-padding:15px;
-text-align:center;
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+border-bottom:1px solid #ffd000;
 }
 
 nav a{
-color:white;
-margin:20px;
+color:#ffd000;
 text-decoration:none;
 font-size:18px;
 }
 
-/* Hero Section */
+/* Logo */
+
+.logo{
+height:60px;
+}
+
+/* Hero */
 
 .hero{
-height:100vh;
-background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
-background-size:cover;
-background-position:center;
+height:80vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-text-align:center;
 }
 
 .hero h1{
@@ -51,41 +56,12 @@ letter-spacing:3px;
 /* Sections */
 
 section{
-padding:80px 20px;
-text-align:center;
+padding:60px 20px;
 }
-
-.projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:40px;
-}
-
-.project{
-background:#1a1a1a;
-padding:20px;
-}
-
-/* Gallery */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:10px;
-padding:20px;
-}
-
-.gallery img{
-width:100%;
-}
-
-/* Footer */
 
 footer{
-background:black;
-padding:30px;
-text-align:center;
+border-top:1px solid #ffd000;
+padding:20px;
 }
 
 </style>
@@ -95,46 +71,40 @@ text-align:center;
 <body>
 
 <nav>
-<a href="#home">Home</a>
+
+<img src="logo.png" class="logo">
+
 <a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
-<section class="hero" id="home">
+<section class="hero">
+
 <h1>Storyloom Productions</h1>
+
+<p>Cinematic storytelling through film and photography</p>
+
 </section>
 
 <section id="about">
+
 <h2>About</h2>
+
 <p>
-Storyloom Productions creates visual stories through film, photography and creative media.
+Storyloom Productions creates visual stories through film,
+photography and creative media.
 </p>
+
 </section>
 
 <section id="projects">
 
 <h2>Projects</h2>
 
-<div class="projects">
-
-<div class="project">
-<h3>Short Films</h3>
-<p>Cinematic storytelling through independent films.</p>
-</div>
-
-<div class="project">
-<h3>Photography</h3>
-<p>Creative photography projects and visual narratives.</p>
-</div>
-
-<div class="project">
-<h3>Workshops</h3>
-<p>Photography and storytelling learning experiences.</p>
-</div>
-
-</div>
+<p>Films • Photography • Creative Workshops</p>
 
 </section>
 
@@ -142,13 +112,7 @@ Storyloom Productions creates visual stories through film, photography and creat
 
 <h2>Gallery</h2>
 
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
-<img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26">
-
-</div>
+<p>Coming soon...</p>
 
 </section>
 
